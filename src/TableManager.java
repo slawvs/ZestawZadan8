@@ -53,7 +53,8 @@ public class TableManager {
 	{
 		if(ileJestObecnieElementowWTablicy > 0)
 		{
-			return uchwyt[ileJestObecnieElementowWTablicy---1];
+			ileJestObecnieElementowWTablicy -= 1;
+			return uchwyt[ileJestObecnieElementowWTablicy];
 		}
 		else
 		{

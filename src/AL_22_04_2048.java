@@ -29,6 +29,8 @@ public class AL_22_04_2048 {
 		for(int i = 0; i < numberOfMoves ; i++)
 		{
 			//w zadaniu wyslanym na Spoja , linijke ponizej nalezalo usunac , gdyz powodowala ze zamiast literek Ruchu zczytywal spacje i wynik = 0
+			//Problem jest zwi¹zany z systemem operacyjnym. Eclipse dzia³a pod Windows gdzie koniec linijki to dwa znaki \r\n . Ideone uruchamia programy pod Linuxem gdzie koniec linii to po prostu \n.
+			
 			bufferRead.read();
 			switch ((char)bufferRead.read()) 
 			{
